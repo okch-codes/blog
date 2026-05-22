@@ -1,6 +1,6 @@
 ---
 title: "The RAM that never came back"
-date: 2026-05-22
+date: 2026-05-22T09:30:00+02:00
 draft: false
 tags: ["macos", "colima", "lima", "docker", "virtualization"]
 categories: ["notes"]

@@ -1,6 +1,6 @@
 ---
 title: "Instagram was slow on my Wi-Fi. The cause wasn't what I thought."
-date: 2026-05-22
+date: 2026-05-22T08:00:00+02:00
 draft: false
 tags: ["networking", "ipv6", "keenetic", "nextdns", "sky-wifi", "wi-fi"]
 categories: ["notes"]
