@@ -1,6 +1,7 @@
 ---
 title: "About"
 url: "/about/"
+layout: "about"
 summary: "About Omar Karim Chtioui"
 ShowToc: false
 ShowReadingTime: false

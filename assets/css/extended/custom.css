@@ -66,3 +66,30 @@
     background: var(--accent);
     color: #fff;
 }
+
+/* ── About page: profile picture next to the title ───────────── */
+.about-title-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-title-row .post-title {
+    margin: 0;
+}
+
+.about-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 3px var(--accent);
+}
+
+@media (max-width: 480px) {
+    .about-avatar {
+        width: 88px;
+        height: 88px;
+    }
+}

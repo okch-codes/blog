@@ -1,0 +1,30 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <div class="about-title-row">
+      {{- with resources.Get "images/profile.jpeg" }}
+      {{- $avatar := .Fill "240x240 Center" }}
+      <img class="about-avatar" src="{{ $avatar.RelPermalink }}"
+           width="120" height="120" alt="{{ site.Params.author }}" loading="eager">
+      {{- end }}
+      <h1 class="post-title entry-hint-parent">{{ .Title }}</h1>
+    </div>
+    {{- if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+    {{- end }}
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content md-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  {{- partial "extend_post_content.html" . }}
+</article>
+
+{{- end }}{{/* end main */}}
