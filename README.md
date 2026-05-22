@@ -4,7 +4,7 @@ Personal website and blog of Omar Karim Chtioui, built with
 [Hugo](https://gohugo.io/) and the
 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
 
-Live at <https://trimalcione.github.io/>.
+Live at <https://blog.okch.pw/>.
 
 ## Local development
 
