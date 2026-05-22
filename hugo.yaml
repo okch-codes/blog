@@ -1,0 +1,117 @@
+baseURL: "https://trimalcione.github.io/"
+locale: "en-us"
+title: "Omar Karim Chtioui"
+theme: "PaperMod"
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+pagination:
+  pagerSize: 8
+
+params:
+  env: production
+  title: "Omar Karim Chtioui"
+  description: "Personal website and blog of Omar Karim Chtioui."
+  keywords: [blog, personal, writing]
+  author: "Omar Karim Chtioui"
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowToc: true
+  TocOpen: false
+  ShowFullTextinRSS: true
+  hidemeta: false
+  hideSummary: false
+  comments: false
+
+  homeInfoParams:
+    Title: "Hi, I'm Omar 👋"
+    Content: >
+      Welcome to my corner of the web — a place for notes, essays, and
+      whatever I'm currently thinking about. Browse the [posts](/posts/)
+      or read a bit [about me](/about/).
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/okch-codes"
+    - name: email
+      url: "mailto:okchtioui@gmail.com"
+    - name: rss
+      url: "/index.xml"
+
+  assets:
+    disableHLJS: false
+
+  label:
+    text: "Omar Karim Chtioui"
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: tags
+  category: categories
