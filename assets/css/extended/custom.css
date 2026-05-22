@@ -1,0 +1,68 @@
+/* ── Accent color ──────────────────────────────────────────────
+   Indigo accent applied on top of the PaperMod theme.
+   Loaded after the theme's core CSS, so these win.            */
+
+:root {
+    --accent: #4f46e5;
+}
+
+:root[data-theme="dark"] {
+    /* lighter shade keeps contrast on the dark background */
+    --accent: #818cf8;
+}
+
+/* Links within posts and pages — colored, with an accent underline */
+.post-content a {
+    color: var(--accent);
+    box-shadow: 0 1px 0 var(--accent);
+    -webkit-box-shadow: 0 1px 0 var(--accent);
+}
+
+.post-content a:hover {
+    box-shadow: 0 2px 0 var(--accent);
+    -webkit-box-shadow: 0 2px 0 var(--accent);
+}
+
+.post-content a code {
+    color: var(--accent);
+}
+
+/* Links in the home/about intro block */
+.entry-content a,
+.post-description a {
+    color: var(--accent);
+}
+
+/* Navigation menu + logo hover */
+.menu a:hover,
+.logo a:hover {
+    color: var(--accent);
+}
+
+/* Pagination buttons */
+.pagination a {
+    background: var(--accent);
+}
+
+/* Post + taxonomy tags on hover */
+.post-tags a:hover,
+.terms-tags a:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+/* Social icons hover */
+.social-icons a:hover {
+    color: var(--accent);
+}
+
+/* Scroll-to-top button hover */
+.top-link:hover {
+    color: var(--accent);
+}
+
+/* Text selection */
+::selection {
+    background: var(--accent);
+    color: #fff;
+}

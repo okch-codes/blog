@@ -51,8 +51,10 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/okch-codes"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/omar-karim-chtioui/"
     - name: email
-      url: "mailto:okchtioui@gmail.com"
+      url: "mailto:blog@okch.pw"
     - name: rss
       url: "/index.xml"
 
