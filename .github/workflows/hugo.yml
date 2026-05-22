@@ -45,11 +45,13 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+        # baseURL comes from hugo.yaml (https://blog.okch.pw/). Don't use
+        # steps.pages.outputs.base_url — it resolves to http:// for the
+        # custom domain, which leaks into canonical tags and the sitemap.
         run: |
           hugo \
             --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
