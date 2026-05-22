@@ -28,4 +28,4 @@ odd half-formed idea. Have a look at the [posts](/posts/).
 Built with [Hugo](https://gohugo.io/) and the
 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, and
 deployed on GitHub Pages. The source lives
-[on GitHub](https://github.com/okch-codes/trimalcione.github.io).
+[on GitHub](https://github.com/okch-codes/blog).

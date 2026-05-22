@@ -1,4 +1,4 @@
-# trimalcione.github.io
+# blog
 
 Personal website and blog of Omar Karim Chtioui, built with
 [Hugo](https://gohugo.io/) and the
@@ -11,8 +11,8 @@ Live at <https://blog.okch.pw/>.
 Requires [Hugo extended](https://gohugo.io/installation/) (0.161+).
 
 ```bash
-git clone --recurse-submodules https://github.com/okch-codes/trimalcione.github.io.git
-cd trimalcione.github.io
+git clone --recurse-submodules https://github.com/okch-codes/blog.git
+cd blog
 hugo server -D        # http://localhost:1313/  (-D includes drafts)
 ```
 
