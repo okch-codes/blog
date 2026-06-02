@@ -144,6 +144,8 @@ Three changes:
 `802.11r/k/v` were already enabled, which is the right default for roaming
 assist; the radio config was the problem, not the roaming logic.
 
+{{< figure src="keenetic-roaming-band-steering.png" alt="Keenetic Titan 'Roaming for Wireless Clients' page: Fast transition (802.11r) enabled for both 2.4 and 5 GHz, Radio Resource & BSS Transition Management (802.11k/v) checked, and Band Steering set to Prefer 5 GHz" caption="The roaming page after the fix: 802.11r/k/v left on, with band steering switched to *Prefer 5 GHz*." >}}
+
 Result: Instagram returned to normal.
 
 ## Takeaways
