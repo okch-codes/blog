@@ -102,6 +102,8 @@ prefix.
 
 ## What was actually wrong: 2.4 GHz Wi-Fi
 
+{{< figure src="instagram-waiting-skeleton.jpg" alt="The 'waiting skeleton' meme — a skeleton sitting on a bench as if it has been waiting forever — captioned 'WAITING FOR INSTAGRAM TO LOAD OVER 2.4 GHz WI-FI'" caption="The lived experience, dramatized." >}}
+
 With DNS ruled out and the WAN side clean, the remaining suspects were the
 Wi-Fi link and the Meta-side IPv6 path. The Keenetic dashboard made the Wi-Fi
 issue obvious:
