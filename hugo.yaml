@@ -20,6 +20,15 @@ pagination:
 
 params:
   env: production
+
+  # Web analytics. Cloudflare Web Analytics is cookie-free, so no consent
+  # banner is needed. Paste the site token from the Cloudflare dashboard
+  # (Web Analytics -> Add a site -> blog.okch.pw -> Manage site) below.
+  # The beacon only loads on production builds (see _partials/extend_head.html).
+  analytics:
+    cloudflare:
+      token: "2d6a5af0bd26472cacfedeecdc697ff8"
+
   title: "Omar Karim Chtioui"
   description: "Personal website and blog of Omar Karim Chtioui."
   keywords: [blog, personal, writing]

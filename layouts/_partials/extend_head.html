@@ -1,0 +1,10 @@
+{{- /* Project-level head additions. Overrides the theme's empty extend_head. */ -}}
+
+{{- /* Cloudflare Web Analytics beacon. Loads only on production builds so that
+       local `hugo server` traffic does not pollute the stats. Set the token in
+       hugo.yaml (params.analytics.cloudflare.token). */ -}}
+{{- with site.Params.analytics.cloudflare.token }}
+{{- if hugo.IsProduction }}
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ . }}"}'></script>
+{{- end }}
+{{- end }}
